@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #0f172a;
+  background: white;
+}
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* HERO */
+.hero {
+  background: #eff6ff;
+  padding: 70px 0 75px;
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.hero-text {
+  width: 55%;
+}
+.badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #2563eb;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.08;
+  margin: 20px 0;
+  max-width: 550px;
+}
+.hero h1 span {
+  color: #2563eb;
+}
+.hero p {
+  color: #64748b;
+  line-height: 1.6;
+  font-size: 14px;
+  max-width: 530px;
+  margin-bottom: 25px;
+}
+.tombol {
+  display: flex;
+  gap: 10px;
+}
+.button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+.button:hover {
+  background: #1d4ed8;
+}
+.gambar {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.gambar img {
+  width: 100%;
+  max-width: 330px;
+}
+/*CARD LOMBA */
+.lomba {
+  background: #f8fafc;
+  padding: 55px 0 70px;
+  min-height: 520px;
+}
+.judul {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.judul small {
+  color: #2563eb;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.judul h2 {
+  font-size: 25px;
+  margin: 13px 0;
+}
+.judul p {
+  color: #64748b;
+  font-size: 12px;
+}
+/* CARD */
+.cards {
+  display: flex;
+  gap: 18px;
+}
+.card {
+  width: 33.33%;
+  min-height: 305px;
+  padding: 25px 20px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+.card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.08);
+}
+.card.pilihan {
+  border: 1.5px solid #2563eb;
+}
+.icon {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.card h4 {
+  color: #2563eb;
+  font-size: 11px;
+  margin-bottom: 14px;
+}
+.card p {
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.card ul {
+  padding-left: 17px;
+  margin-bottom: 15px;
+}
+.card li {
+  color: #475569;
+  font-size: 11px;
+  margin-bottom: 7px;
+}
+.pilih {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: bold;
+}
+.pilih:hover {
+  color: #1d4ed8;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+  .hero {
+    padding: 50px 0;
+  }
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero h1 {
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .tombol {
+    justify-content: center;
+  }
+  .gambar {
+    width: 70%;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 13px;
+  }
+  .gambar {
+    width: 100%;
+  }
+  .judul h2 {
+    font-size: 24px;
+  }
+  .cards {
+    gap: 15px;
+  }
+}
